@@ -1,0 +1,21 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "A portfolio website",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"build": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --minify",
+		"start": "npm install && npm run build && php -S localhost:80",
+		"dev": "npm install && php -S localhost:80",
+		"css": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.15",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.49",
+		"tailwindcss": "^3.4.15"
+	}
+}

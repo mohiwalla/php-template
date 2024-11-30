@@ -1,0 +1,9 @@
+# Third-party packages
+/vendor
+/node_modules
+
+# local files
+package-lock.json
+
+# testing
+src/app/test.php

@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 240 10% 3.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
+		--primary: 240 5.9% 10%;
+		--primary-foreground: 0 0% 98%;
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
+		--muted: 240 4.8% 95.9%;
+		--muted-foreground: 240 3.8% 46.1%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 4% 91%;
+		--input: 240 5.9% 90%;
+		--ring: 240 5.9% 10%;
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 0, 0%, 7%;
+		--foreground: 0 0% 98%;
+		--card: 0, 0%, 7%;
+		--card-foreground: 0 0% 98%;
+		--popover: 0, 0%, 7%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 0 0% 98%;
+		--primary-foreground: 240 5.9% 10%;
+		--secondary: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
+		--accent: 240 3.7% 15.9%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 4% 15%;
+		--input: 240 3.7% 15.9%;
+		--ring: 240 4.9% 83.9%;
+	}
+
+	* {
+		color-scheme: dark;
+		@apply border-border scroll-smooth;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+
+	img {
+		@apply saturate-[1.2];
+	}
+
+	a,
+	img,
+	button,
+	label {
+		@apply select-none;
+	}
+
+	input.custom {
+		@apply flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 shadow-sm transition-colors file:border-0 file:bg-transparent file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+	}
+
+	textarea.custom {
+		@apply flex w-full rounded-md border border-input bg-transparent px-3 py-2 shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+	}
+
+	label.custom {
+		@apply font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
+	}
+
+	.base-button {
+		@apply flex items-center font-medium rounded-lg text-sm px-5 py-2.5 justify-center transition-colors duration-150 disabled:opacity-50 disabled:pointer-events-none;
+	}
+
+	.btn-primary {
+		@apply base-button text-white bg-blue-600 hover:bg-blue-700;
+	}
+
+	.btn-secondary {
+		@apply base-button border bg-zinc-100 dark:bg-zinc-800/20 hover:bg-zinc-100 dark:hover:bg-zinc-800/50;
+	}
+
+	.btn-danger {
+		@apply base-button text-white bg-red-600 hover:bg-red-700;
+	}
+
+	.btn-success {
+		@apply base-button text-white bg-green-600 hover:bg-green-700;
+	}
+
+	.btn-ghost {
+		@apply base-button bg-background hover:bg-zinc-100 dark:hover:bg-zinc-800/50;
+	}
+
+	select {
+		appearance: none;
+		background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 10 6'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
+		background-position: right 0.75rem center;
+		background-repeat: no-repeat;
+		background-size: 0.75em 0.75em;
+	}
+}
