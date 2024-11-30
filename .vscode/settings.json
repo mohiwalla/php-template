@@ -12,5 +12,6 @@
 	},
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
-	}
+	},
+	"php.version": "8.4"
 }

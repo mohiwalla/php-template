@@ -20,7 +20,7 @@ class zod
      * @param string $name The name of the property.
      * @param mixed $value The value of the property.
      */
-    function __set($name, $value)
+    function __set(string $name, mixed $value)
     {
         $this->$name = $value;
     }
@@ -34,7 +34,7 @@ class zod
      * @param string|null $requiredMessage Message to return if field is required but not present.
      * @return $this
      */
-    function field(string $name, callable $validator = null, $invalidMessage = null, $requiredMessage = null)
+    function field(string $name, ?callable $validator = null, string | null $invalidMessage = null, string | null $requiredMessage = null)
     {
         if (!$validator) {
             $validator = function() {
@@ -125,7 +125,7 @@ class zod
      * @param callable|null $function Optional validator function for each element in the array.
      * @return callable
      */
-    function array(callable $function = null)
+    function array(?callable $function = null)
     {
         return function ($value) use ($function) {
             $result = new stdClass();

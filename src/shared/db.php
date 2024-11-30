@@ -74,7 +74,7 @@ class DB
      *
      * @return array An array of associative arrays representing the rows in the result set.
      */
-    function fetchAll($result, callable $callback = null)
+    function fetchAll($result, ?callable $callback = null)
     {
         $data = [];
 
