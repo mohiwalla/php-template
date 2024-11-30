@@ -13,7 +13,7 @@
                     </li>
 
                     <li>
-                        <a href="http://github.com/mohiwalla/" target="_blank" class="btn-ghost gap-2">
+                        <a href="http://github.com/mohiwalla/php-template" target="_blank" class="btn-ghost gap-2">
                             <i class="fa-brands fa-github"></i> GitHub
                         </a>
                     </li>
