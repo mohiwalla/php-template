@@ -13,14 +13,14 @@
                     </li>
 
                     <li>
-                        <a href="http://github.com/mohiwalla/php-template" target="_blank" class="btn-ghost gap-2">
-                            <i class="fa-brands fa-github"></i> GitHub
+                        <a href="/admin" class="btn-ghost">
+                            Admin
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://linkedin.com/in/mohiwalla" target="_blank" class="btn-ghost gap-2">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        <a href="http://github.com/mohiwalla/php-template" target="_blank" class="btn-ghost gap-2">
+                            <i class="fa-brands fa-github"></i> GitHub
                         </a>
                     </li>
                 </ul>
