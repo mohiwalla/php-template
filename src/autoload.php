@@ -1,7 +1,9 @@
 <?php
 
 header("X-Frame-Options: DENY");
-$route = @$_SERVER['PATH_INFO'] ? str_ends_with($_SERVER['PATH_INFO'], "/") ? substr($_SERVER['PATH_INFO'], 0, -1) : $_SERVER['PATH_INFO'] : "/";
+
+$rawRoute = rtrim($_SERVER['REQUEST_URI'], "/");
+$route = $rawRoute ?: "/";
 
 require __DIR__ . "/lib/fetch.php";
 require __DIR__ . "/shared/routes.php";

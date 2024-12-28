@@ -19,5 +19,7 @@ class Response
 
 		$response = array_merge(['ok' => $status, 'text' => $message], $additionalData);
 		echo json_encode($response);
+
+		exit;
 	}
 }

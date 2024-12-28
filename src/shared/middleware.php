@@ -30,7 +30,6 @@ if ($isAPIroute) {
     }
 
     new Response(true, "We couldn't find the resource you're looking for.", 404);
-    exit;
 }
 
 # just to demonstrate custom route handling logic

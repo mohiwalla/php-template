@@ -5,8 +5,8 @@
 	"main": "tailwind.config.js",
 	"scripts": {
 		"build": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --minify",
-		"start": "npm install && npm run build && php -S localhost:80",
-		"dev": "npm install && php -S localhost:80",
+		"start": "npm run build && npm run dev",
+		"dev": "php -S localhost:8000",
 		"css": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
 	},
 	"keywords": [],
