@@ -1,7 +1,10 @@
 {
-	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "A portfolio website",
+	"name": "@mohiwalla/php",
+	"version": "1.0.1",
+	"bin": {
+		"php-init": "./bin/init"
+	},
+	"description": "A PHP template with Tailwind.CSS and routing system",
 	"main": "tailwind.config.js",
 	"scripts": {
 		"build": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --minify",
@@ -9,11 +12,21 @@
 		"dev": "php -S localhost:8000",
 		"css": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"php",
+		"php template",
+		"php-template",
+		"template",
+		"tailwind",
+		"tailwind css",
+		"tailwind php",
+		"npm php",
+		"php cli",
+		"cli"
+	],
+	"author": "mohiwalla",
 	"license": "ISC",
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.15",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.49",
 		"tailwindcss": "^3.4.15"

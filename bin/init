@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Check if a project name is provided
+if [ -z "$1" ]; then
+    echo "Usage: php-template-init <project-name>"
+    exit 1
+fi
+
+PROJECT_NAME=$1
+
+# Clone the repository into the specified folder
+git clone https://github.com/mohiwalla/php-template "$PROJECT_NAME"
+
+# Change into the project directory
+cd "$PROJECT_NAME" || exit
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
