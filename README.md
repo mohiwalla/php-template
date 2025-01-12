@@ -2,7 +2,7 @@
 
 A simple PHP template with basic routing functionality and directory structure to get started on a new project quickly. It has zero third party dependencies except on development environment. This project is meant to be used by PHP 8 and above.
 
-It uses tailwindcss for styling, a sleek DB class for database intraction (sql server only for now).
+It uses tailwindcss for styling, a sleek DB class for database intraction so that you don't have to use low level functions (only mysql and mssql for now).
 
 ## Prerequisites
 
@@ -15,10 +15,10 @@ It uses tailwindcss for styling, a sleek DB class for database intraction (sql s
 
 1. Clone the reposiroty by running `git clone https://github.com/mohiwalla/php-template`.
 2. Open the project in a code editor.
-3. run command `npm run dev` in terminal.
+3. run command `npm install` and `npm run dev` in terminal.
 4. run command `npm run css` in another terminal.
 5. visit [http://localhost](http://localhost) in browser.
 
 ### For deployment
 
-Just run `npm run start` if you've node or just run `php -S localhost:<free-port>`
+Just run `npm run start` if you've node or just run `php -S localhost:<6969>`
