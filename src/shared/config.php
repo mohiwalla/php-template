@@ -5,12 +5,13 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
 
+# if IP is null then it's a development environment
+define("DEV", GetIP() === null);
+
 # error reporting enabled for development
-if (GetIP() === null) {
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-}
+ini_set('display_errors', DEV ? 1 : 0);
+ini_set('display_startup_errors', DEV ? 1 : 0);
+error_reporting(DEV ? -1 : 0);
 
 # loading .env file
 $envFilePath = __DIR__ . "/../../.env";
