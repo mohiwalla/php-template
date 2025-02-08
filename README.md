@@ -1,35 +1,55 @@
-# php-template
+# PHP Template
 
-A simple PHP template with basic routing functionality and directory structure to get started on a new project quickly. It has zero third-party dependencies except in the development environment. This project is meant to be used with PHP 8 and above.
+[![PHP Version](https://img.shields.io/badge/PHP-8%2B-blue)](https://www.php.net/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/mohiwalla/php-template/blob/master/LICENSE)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-blueviolet)](https://tailwindcss.com/)
+[![Issues](https://img.shields.io/github/issues/mohiwalla/php-template)](https://github.com/mohiwalla/php-template/issues)
+[![Stars](https://img.shields.io/github/stars/mohiwalla/php-template?style=social)](https://github.com/mohiwalla/php-template)
 
-It uses Tailwind CSS for styling and a sleek DB class for database interaction so that you don't have to use low-level functions (only MySQL and MSSQL for now).
+Welcome to PHP Template—a streamlined PHP starter kit designed to kickstart your projects with essential features and a clean directory structure. This template offers basic routing capabilities and integrates Tailwind CSS for styling, ensuring a modern and responsive design. It also includes a lightweight database class for simplified interactions with MySQL and MSSQL databases. The project is tailored for PHP 8 and above and maintains zero third-party dependencies in the production environment.
+
+## Features
+
+- **Basic Routing**: Effortlessly define and manage routes for your application.
+- **Tailwind CSS Integration**: Utilize the utility-first CSS framework for rapid UI development.
+- **Lightweight Database Class**: Simplify database operations without delving into low-level functions.
+- **Modern PHP Practices**: Leverage the latest features and improvements in PHP 8.
 
 ## Prerequisites
 
-1. [Node.js](https://nodejs.org/)
-2. [PHP 8 or above](https://www.php.net/)
+Before setting up the project, ensure you have the following installed:
 
-## Setup
+- **Node.js**: [Download Node.js](https://nodejs.org/)
+- **PHP 8 or above**: [Download PHP](https://www.php.net/)
+
+## Setup Instructions
 
 ```bash
-npx @mohiwalla/php .
+npm init php
 ```
 
-Visit [http://localhost:8000](http://localhost:8000).
+After installation, navigate to [localhost:8000](http://localhost:8000) in your browser to view the application.
 
-## Scripts
+## Available Scripts
 
-The following npm scripts are available:
+The following npm scripts are available for your use:
 
-- `build`: Compiles the Tailwind CSS from `input.css` to `style.css`.
+- `build`: Compiles Tailwind CSS from input.css to style.css.
 - `start`: Builds the CSS and starts the development server.
-- `dev`: Starts the PHP built-in server on `localhost:8000`.
-- `css`: Watches for changes in `input.css` and rebuilds `style.css`.
+
+## Project Structure
+
+The project follows a clear and organized structure:
+
+- `public/`: Contains publicly accessible files, including the entry point index.php.
+- `src/`: Houses the core application code, such as routing and database classes.
+- `tailwind.config.js`: Configuration file for Tailwind CSS.
+- `.env`: Environment variables configuration file.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more details.
-
-## Author
-
-- **mohiwalla**
+This project is licensed under the ISC License. See the [LICENSE](https://github.com/mohiwalla/php-template/blob/master/LICENSE) file for more details.

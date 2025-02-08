@@ -14,21 +14,34 @@
 	},
 	"keywords": [
 		"php",
-		"php template",
+		"nextjs",
+		"next.js",
+		"php js",
+		"php npm",
+		"mohiwalla",
+		"php-next.js",
+		"next.js-php",
+		"php-nextjs",
+		"nextjs-php",
+		"php routing",
+		"php project",
+		"php tailwind",
+		"php tailwindcss",
+		"php boilterplate",
+		"zx",
+		"php-cli",
+		"php-project",
 		"php-template",
-		"template",
-		"tailwind",
-		"tailwind css",
-		"tailwind php",
-		"npm php",
-		"php cli",
-		"cli"
+		"php-tailwindcss",
+		"php-npm",
+		"php-node",
+		"php-package"
 	],
 	"author": "mohiwalla",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.5.1",
-		"tailwindcss": "^3.4.17"
+		"tailwindcss": "^4.0.4"
 	}
 }
