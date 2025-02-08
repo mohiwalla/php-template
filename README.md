@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/mohiwalla/php-template/blob/master/LICENSE)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4-blueviolet)](https://tailwindcss.com/)
 [![Issues](https://img.shields.io/github/issues/mohiwalla/php-template)](https://github.com/mohiwalla/php-template/issues)
-[![Stars](https://img.shields.io/github/stars/mohiwalla/php-template?style=social)](https://github.com/mohiwalla/php-template)
+[![Stars](https://img.shields.io/github/stars/mohiwalla/php-template?style=social)](https://github.com/mohiwalla/php-template/stargazers)
 
 Welcome to PHP Template—a streamlined PHP starter kit designed to kickstart your projects with essential features and a clean directory structure. This template offers basic routing capabilities and integrates Tailwind CSS for styling, ensuring a modern and responsive design. It also includes a lightweight database class for simplified interactions with MySQL and MSSQL databases. The project is tailored for PHP 8 and above and maintains zero third-party dependencies in the production environment.
 
