@@ -1,16 +1,20 @@
 {
 	"name": "@mohiwalla/php",
 	"version": "1.0.1",
-	"bin": {
-		"php-init": "./bin/init"
-	},
 	"description": "A PHP template with Tailwind.CSS and routing system",
 	"main": "tailwind.config.js",
 	"scripts": {
-		"build": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --minify",
-		"start": "npm run build && npm run dev",
-		"dev": "php -S localhost:8000",
-		"css": "tailwindcss -i ./public/css/input.css -o ./public/css/style.css --watch"
+		"css:dev": "tailwindcss -i ./public/css/global.css -o ./public/css/style.css --watch",
+		"php:dev": "php -S localhost:3000",
+		"dev": "npm-run-all --parallel css:dev php:dev",
+		"build": "tailwindcss -i ./public/css/global.css -o ./public/css/style.css --minify"
+	},
+	"author": "mohiwalla",
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.5.2",
+		"tailwindcss": "^3.4.17"
 	},
 	"keywords": [
 		"php",
@@ -37,11 +41,5 @@
 		"php-node",
 		"php-package"
 	],
-	"author": "mohiwalla",
-	"license": "MIT",
-	"devDependencies": {
-		"autoprefixer": "^10.4.20",
-		"postcss": "^8.5.1",
-		"tailwindcss": "^4.0.4"
-	}
+	"license": "MIT"
 }
